@@ -1,0 +1,13 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for vcftools, version 0.1.17"
+}
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/vcftools/src/cpp
+prepend-path    PATH            $approot
+prepend-path    MANPATH         $approot

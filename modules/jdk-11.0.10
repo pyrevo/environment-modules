@@ -1,0 +1,12 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for JDK, version 11.0.1"
+}
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/OpenJDK11U-jdk_x64_linux_hotspot_11.0.10_9/jdk-11.0.10+9
+prepend-path    PATH            $approot/bin

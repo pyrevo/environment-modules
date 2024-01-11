@@ -1,0 +1,12 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for STAR, version 2.7.10a"
+}
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/STAR-2.7.10a/bin/Linux_x86_64/
+prepend-path    PATH            $approot

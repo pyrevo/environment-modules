@@ -1,0 +1,12 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for tabix, version 0.2.5"
+}
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/tabix
+prepend-path    PATH            $approot

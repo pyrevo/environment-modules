@@ -1,0 +1,14 @@
+#%Module1.0#####################################################################
+##
+## bwa-0.7-17 modulefile
+##
+proc ModulesHelp { } {
+        puts stderr "\tAdds bwa-mem2 to your PATH environment variable\n"
+}
+
+module-whatis   "Adds bwa-mem2 to your PATH environment variable"
+
+	set 	approot    /opt/sw/bioinfo-tools/sources
+prepend-path	PATH	$approot/bwa-mem2	
+prepend-path 	SRC	$approot/src
+#conflict        python

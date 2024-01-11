@@ -1,0 +1,15 @@
+#%Module1.0#####################################################################
+##
+## bwa-0.7-17 modulefile
+##
+proc ModulesHelp { } {
+        puts stderr "\tAdds bwa-0.7-17 to your PATH environment variable\n"
+}
+
+module-whatis   "Adds bwa-0.7-17 to your PATH environment variable"
+
+#	set 	approot    /opt/sw/bioinfo-tools/sources/bwa-0.7-17
+#prepend-path	PATH	$approot/bwa
+#conflict        python
+         set    approot         /opt/sw/bioinfo-tools/sources/bwa-0.7.17
+prepend-path    PATH            $approot

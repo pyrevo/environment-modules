@@ -1,0 +1,12 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for GenomeTools, version 1.6.1"
+}
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/gt-1.6.1-Linux_x86_64_x86_64-64bit/bin
+prepend-path    PATH            $approot

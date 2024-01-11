@@ -1,0 +1,13 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for primerclip, version 0.3.8"
+}
+
+set _module_name        [module-info name]
+
+         #set    approot         /opt/sw/bioinfo-tools/sources/primerclip/.stack-work/install/x86_64-linux/lts-11.0/8.2.2
+         set    approot         /opt/sw/bioinfo-tools/sources/anaconda3/envs/primerclip
+prepend-path    PATH            $approot/bin

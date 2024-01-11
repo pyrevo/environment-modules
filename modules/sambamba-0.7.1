@@ -1,0 +1,17 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for sambamba, version 0.7.1"
+}
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/sambamba-0.7.1
+prepend-path    PATH            $approot
+
+
+
+
+

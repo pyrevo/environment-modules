@@ -1,0 +1,14 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for hydra-genetics, version 0.11.0"
+}
+
+module load anaconda3
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/anaconda3/envs/hydra-genetics_0.11.0
+prepend-path    PATH            $approot/bin

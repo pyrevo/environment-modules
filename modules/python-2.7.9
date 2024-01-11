@@ -1,0 +1,10 @@
+#%Module1.0#####################################################################
+##
+## python3.9 modulefile
+##
+proc ModulesHelp { } {
+        puts stderr "\tThis module sets up the environment for Python, version 2.7.9"
+}
+
+prepend-path    PATH    /opt/sw/bioinfo-tools/sources/Python-2.7.9
+conflict        python

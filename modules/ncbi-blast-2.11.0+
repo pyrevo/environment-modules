@@ -1,0 +1,13 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for blast, version 2.11.0+"
+}
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/ncbi-blast-2.11.0+/bin/
+prepend-path    PATH            $approot
+

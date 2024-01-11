@@ -1,0 +1,13 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for hmmer, version 3.3.1"
+}
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/hmmer-3.3.1/src
+prepend-path    PATH            $approot
+

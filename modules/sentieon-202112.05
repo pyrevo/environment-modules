@@ -1,0 +1,14 @@
+#%Module1.0####################################################################
+
+proc ModulesHelp { } {
+        global _module_name
+
+        puts stderr "\tThis module sets up the environment for sentieon, version 202112.05"
+}
+
+set _module_name        [module-info name]
+
+         set    approot         /opt/sw/bioinfo-tools/sources/sentieon-genomics-202112.05
+prepend-path    PATH            $approot/bin
+#prepend-path    LD_LIBRARY_PATH $approot/lib64:$approot/lib64/R/lib
+#prepend-path    MANPATH         $approot/share/man
